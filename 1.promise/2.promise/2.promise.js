@@ -8,20 +8,21 @@ function Promise(executor){
     // 存储失败的回调
     self.onRejectedCallbacks = []
     // 存储当前这个promise的状态
+    self.status = 'pedding'
     function resolve(value){
         if(self.status ==='pedding'){
             self.value = value
             self.status = 'resolved'
-            self.onResovleCallbacks.forEach(function(fn){
+            self.onResolveCallbacks.forEach(function(fn){
                 fn()
             })
         }
     }
     function reject(reason){
         if(self.status ==='pedding'){
-            self.reason = value
-            self.status = 'resolved'
-            self.onrejectedCallbacks.forEach(function(fn){
+            self.reason = reason
+            self.status = 'rejected'
+            self.onRejectedCallbacks.forEach(function(fn){
                 fn()
             })
         }
@@ -30,18 +31,18 @@ function Promise(executor){
 }
 Promise.prototype.then = function(onFulfilled,onRejected){
     let self = this
-    if(self.status ==='resolve'){
+    if(self.status ==='resolved'){
         onFulfilled(self.value)
     }
-    if(self.status==='reject'){
-        onRejected(reason)
+    if(self.status==='rejected'){
+        onRejected(self.reason)
     }
     if(self.status === 'pedding'){
         self.onResolveCallbacks.push(function(){
             onFulfilled(self.value)
         })
         self.onRejectedCallbacks.push(function(){
-            onRejectedCallbacks(self.reason)
+            onRejected(self.reason)
         })
     }
 }

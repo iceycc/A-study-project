@@ -1,8 +1,7 @@
 let Promise = require('./2.promise')
-
 let p = new Promise(function(resolve,reject){
     setTimeout(()=>{
-        reject()
+        reject('11')
     },1000)
 })
 
