@@ -30,7 +30,7 @@ function Promise(executor) {
 function resolvePromise(x, promise, resolve, reject) {
 
 
-console.log(3121)
+  console.log(3121)
     
 }
 Promise.prototype.then = function(onFulfilled, onRejected) {
