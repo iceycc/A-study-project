@@ -44,17 +44,21 @@ console.log(3131212121)
       // resolvePromise(x, promise2, resolve, reject);
     }
     if (self.status === "rejected") {
+      // 获取then中成功或者失败后函数的执行结果
+      // 看一看是promis吗
+      // 是promse 就让promise执行，取得这个promise执行结果 让返回的promise成功或者失败
+      // 如果x是普通值就让这个返回的promise 变成成功态
       let x = onRejected(self.reason);
-      // resolvePromise(x, promise2, resolve, reject);
+      resolvePromise(x, promise2, resolve, reject);
     }
     if (self.status === "pedding") {
       self.onResolveCallbacks.push(function() {
         let x = onFulfilled(self.value);
-        // resolvePromise(x, promise2, resolve, reject);
+        resolvePromise(x, promise2, resolve, reject);
       });
       self.onRejectCallbacks.push(function() {
         let x = onRejected(self.resaon);
-        // resolvePromise(x, promise2, resolve, reject);
+        resolvePromise(x, promise2, resolve, reject);
       });
     }
   });
