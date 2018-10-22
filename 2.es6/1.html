@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: red;
+            position: absolute;
+            left: 0;
+        }
+
+        .box1 {
+            top: 0;
+        }
+
+        .box2 {
+            top: 100px;
+        }
+
+        .box3 {
+            top: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <script>
+        let $ = document.querySelector.bind(document)
+
+        // 1 传统的动画， 造成回调地狱
+        // function move(ele,target,callback){
+        //     let left = 0;
+        //     let timer = setInterval(function(){
+        //         console.log(left,target)
+        //         if(left >= target){
+        //             clearInterval(timer);
+        //             return callback()
+        //         }
+        //         left++;
+        //         ele.style.left = left + 'px'
+        //     },6)
+        // }
+        // move($('.box1'),500,function(){
+        //     move($('.box2'),100,function(){
+        //         move($('.box3'),400,function(){
+
+        //         })
+        //     })
+        // })
+
+        // 2 promise版本的 move
+        function move(ele, target) {
+            ele = $(ele)
+            return new Promise((resolve, reject) => {
+                let left = 0;
+                let timer = setInterval(function () {
+                    if (left >= target) {
+                        clearInterval(timer);
+                        return resolve();
+                    }
+                    left++;
+                    ele.style.left = left + 'px'
+                }, 6)
+            })
+        }
+        // move('.box1',500).then(()=>{
+        //     return move('.box2',200)
+        // }).then(()=>{
+        //     return move('.box3',300)
+        // }).then(()=>{
+        // })
+
+        // 3 generator * yield 暂停 一个函数被分割成了一个若干小函数，每次都调用时会把调用的指针向下移动
+        // function* gen() {
+        //     let a = yield move('.box1', 500);
+        //     console.log(a);
+        //     let b = yield move('.box2', 300);
+        //     console.log(b);
+        //     let c = yield move('.box3', 500)
+        // }
+        // function co(it) {
+        //     // 返回一个promise
+        //     return new Promise((resolve, reject) => {
+        //         // next函数
+        //         function next(data) {
+        //             // 解构it.next
+        //             let { value, done } = it.next(data)
+        //             // 检查当前是否为 Generator 函数的最后一步，如果是就返回。
+        //             if(!done){
+        //                 // todo 确保每一步的返回值，是 Promise 对象。
+        //                 value.then(data=>{
+        //                     // 使用then方法，为返回值加上回调函数，然后通过onFulfilled函数再次调用next函数。
+        //                     next(data)
+        //                 },reject)
+        //             }else{
+        //                 // 在参数不符合要求的情况下（参数非 Thunk 函数和 Promise 对象），将 Promise 对象的状态改为rejected，从而终止执行。
+        //                 resovle(value)
+        //             }
+        //         }
+        //     })
+
+        // }
+        // co(gen()).then(data => {
+        //     console.log('执行完了')
+        // })
+
+        // 4 async await  (终极异步解决方案)
+        // callback 回调问题
+        // 异步方法不能 trycCatch 不能捕获异常错误
+        // 让代码执行的更像同步
+        // await 要搭配async来使用
+
+        async function gen(){
+            try{
+                let a = await move('.box1',300)
+                let c = await 100
+                let b = await move('.box2',c)
+                let d = await move('.box3',1000)
+                
+            }catch(e){
+                console.log('catch',e)
+            }
+            return c
+        }
+        gen().then(function(data){
+            console.log(data)
+        }).catch(err=>{
+            console.log(err)
+        })
+
+    </script>
+</body>
+
+</html>
