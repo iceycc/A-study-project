@@ -46,20 +46,13 @@ class Parent extends Component{
     componentWillUpdate(){
         console.log('Parent-componentWillUpdate')
     }
-    componentDidUpdate(newProps,oldProps,z){
+    componentDidUpdate(){
         console.log('Parent-componentDidUpdate')
-        console.log(newProps,oldProps,z)
     }
     clickHandle=()=>{
         this.setState({
             num:this.state.num+1
         })
-    }
-    componentWillUnmount(){
-        console.log('Parent-componentWillUnmount')
-    }
-    componentDidCatch(){
-        console.log('Parent-componentDidCatch')
     }
     render(){
         console.log('Parent-render')
@@ -108,21 +101,7 @@ class Child extends Component {
         // 接收到某个属性后 把这个属性变成了当前组件的状态
         console.log('Child-componentWillReceiveProps')
     }
-
-  // 可以直接调用 并且不需要再写setState  新状态
-  static getDerivedStateFromProps(newProps){ 
-    console.log(newProps)
-    return {m:2}
-  }
 }
-// 
-// componentWillMount 对
-// render 对
-// componentDidMount 对
-// shouldComponentUpdate 优化
-// componentWillUpdate 用不到
-// componentDidUpdate 用不到
-// componentWillReceiveProps 偶尔用到
-// componentWillUnmount 解绑事件 可能会用到
+
 
 ReactDOM.render(<Parent></Parent>,window.root)
