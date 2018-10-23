@@ -1,12 +1,30 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import ReactDom from 'react-dom'
+// 受控组件 首状态控制 很快的进行校验 默认值操作
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class Control extends React.Component {
+    state = {
+        a:'hellow',
+        b:'world'
+    }
+    changeHandle=(e)=>{
+        console.log(e.target.value)
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+        // 双向数据绑定 change时 讲界面数据 setState 跟新 从新渲染界面
+        this.setState({
+            [e.target.name]:e.target.value
+        })
+    }
+    render(){
+        return (
+            <div>
+                <input type="text" name="a" value={this.state.a} onChange={this.changeHandle}/>
+                <input type="text" name="b" value={this.state.b} onChange={this.changeHandle}/>
+                {this.state.a}
+                {this.state.b}
+            </div>
+        )
+    }
+}
+
+ReactDom.render(<Control></Control>,window.root)
