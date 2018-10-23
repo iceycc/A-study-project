@@ -1,6 +1,26 @@
 import React from 'react';
-import ReactDom from 'react-dom'
+import "bootstrap/dist/css/bootstrap.css"
+export default class App extends React.Component {
+    state = {
+        user:[],
+        count:0
+    }
 
-// Context Api 组件通讯
-// 获取组件  智能组件 
-// ui组件  木偶组建
+    render(){
+        return(
+            <div className="container">
+                <div className="panel panel-danger">
+                    <div className="panel-heading">
+                        评论
+                    </div>
+                    <div className="panel-body">
+                        身体
+                    </div>
+                
+                </div>
+
+            </div>
+        )
+    }
+}
+
