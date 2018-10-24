@@ -1,0 +1,24 @@
+{
+    "code":0,
+    "users":[
+        {
+            "id":1,
+            "username":"小王",
+            "avatar":"http://image.icey.cc/2018-10-24-download.jpeg",
+            "content":"今天天气不错"
+        },
+        {
+            "id":2,
+            "username":"小冰",
+            "avatar":"http://image.icey.cc/2018-10-24-download.jpeg",
+            "content":"胡说"
+        },
+        {
+            "id":3,
+            "username":"小洋",
+            "avatar":"http://image.icey.cc/2018-10-24-download.jpeg",
+            "content":"哈哈"
+        }
+
+    ]
+}

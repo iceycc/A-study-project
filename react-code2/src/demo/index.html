@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        .bar {
+            height: 30px;
+            background-color: #cd0000;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 120px;
+            /* Safari下z-index无效 */
+            transform: translateZ(100px);
+            z-index: 99;
+        }
+
+        .box {
+            text-align: center;
+            /* overflow:hidden */
+        }
+
+        .rotate {
+            transform: perspective(300px) rotateY(40deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bar"></div>
+    <div class="box">
+        <img class="rotate" src="http://image.icey.cc/2018-10-24-download.jpeg">
+    </div>
+</body>
+
+</html>
