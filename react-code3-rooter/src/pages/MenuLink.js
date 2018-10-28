@@ -1,11 +1,15 @@
 import React from 'react'
-export default class MenuLink extends React.Component{
-  render(){
+import {Route,Link} from 'react-router-dom'
+
+export default class MenuLink extends React.Component {
+  render() {
 
     return (
-        <div>
-
-        </div>
+        <Route path={this.props.to} children={({match}) => {
+          return <li className={match?"active":""}>
+            <Link to={this.props.to}>{this.props.children}</Link>
+          </li>
+        }}/>
     )
   }
 }
