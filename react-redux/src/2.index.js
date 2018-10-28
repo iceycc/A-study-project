@@ -1,6 +1,5 @@
+// 进阶版本的store
 
-
-//
 function createStore(reducer) {
   let state; // 对外还要暴露state属性，暴露的属性不希望别人更改，就算你更改了也不会影响原来的状态
   let listeners = []
