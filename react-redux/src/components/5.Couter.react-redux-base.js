@@ -1,6 +1,28 @@
 import React from 'react';
-import store from '../store'
-import * as types from '../store/action-type'
+import {createStore} from 'redux';
+
+const ADD = 'ADD';
+const MINUS = 'MINUS';
+
+// 初始化仓库
+let initState = {
+  number: 0
+}
+// 管理员
+function reducer(state = initState, action) {
+  switch (action.type) {
+    case ADD:
+      return {number: state.number + action.count}
+      break;
+    case MINUS:
+      return {number: state.number - action.count}
+      break;
+  }
+  return state
+}
+
+let store = createStore(reducer)
+window.store = store // 在控制台打印store.getState()，可用于调试。看看state是否改变呢
 
 
 // 将redux中的属性映射成组件的状态
@@ -29,7 +51,7 @@ export default class Counter extends React.Component {
           <button onClick={
             () => {
               store.dispatch({
-                type: types.ADD,
+                type: ADD,
                 count: 1
               })
               // 状态改变后可以很low的用setState更新数据
@@ -47,7 +69,7 @@ export default class Counter extends React.Component {
           <button onClick={
             () => {
               store.dispatch({
-                type: types.MINUS,
+                type: MINUS,
                 count: 1
               })
               // 状态改变后可以很low的用setState更新数据
