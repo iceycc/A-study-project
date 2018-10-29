@@ -6,6 +6,13 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    div{
+      background: yellow;
+      margin: 10px 0;
+      border: 1px solid #000000;
+    }
+  </style>
 </head>
 <body>
 
@@ -20,6 +27,26 @@
   <span v-if="show">5秒后消失  {{msg}}s</span>
 </div>
 
+<div id="app-4">
+  <p v-for="item in todos">
+    {{item.text}}
+  </p>
+</div>
+
+<div id="app-5">
+  <p>{{message}}</p>
+  <button @click="reverseMessage">逆转信息</button>
+</div>
+
+<div id="app-6">
+  <p>{{message}}</p>
+  <input type="text" v-model="message">
+</div>
+
+
+<div id="app-7">
+  <todo-item v-for="item in groceryList" :todo="item" :key="item.id"></todo-item>
+</div>
 <script src="../node_modules/vue/dist/vue.min.js"></script>
 <script src="./index.js"></script>
 </body>
