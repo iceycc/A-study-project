@@ -1,7 +1,8 @@
-function createStore(ruducer){
+function createStore(reducer){
   let state;
   let listener = [];
   let dispatch = (action) =>{
+    // 执行reducer
     state =reducer(state,action);
     // 每次状态更新要重新执行渲染函数
     listener.forEach(fn=>fn());
@@ -13,11 +14,9 @@ function createStore(ruducer){
   let subscribe = (fn)=>{
     listener.push(fn);
     return ()=>{
-      // 返回一个取消订阅的函数
+      // 返回一个取消订阅的函数  删除的函数
       // 过滤掉和当前订阅函数相同的函数
-      listener = listener.filter(l=>{
-        l!=fn
-      })
+      listener = listener.filter(l=>{l!=fn})
     }
   }
 

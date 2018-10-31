@@ -9,14 +9,15 @@
 * 2019年05月1日-2019年06月30日：`项目提升`：重点思考如何结合在项目中用的知识点，同时整理简历，思考启动个人项目。
 # 计划进行时
 ## 第一阶段 2018年10月1日-2019年01月31日
-### 第一周（2018.10.25-2018.11.4）：add （文件夹+知识点总结）
+### 第一周 多（2018.10.25-2018.11.4）：add （文件夹+知识点总结）
 * 1.promise  
 * 2.es6
 * react-code1
 * react-code2
 * react-code3-router
 * react-redux:redux基本用法，手写redux库，redux原始形态，redux一次封装形态，redux结合dom应用，redux结合react基本使用，redux结合react模块化规范使用
-* 
+* vue 1.hellow-world vue文档入门内容
+* vue 2.first-instance vm实例，lifecycle
 
 # 课程大纲
 ### 一、高级全栈架构课基础部分

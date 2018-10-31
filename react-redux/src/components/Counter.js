@@ -1,9 +1,18 @@
 import React from 'react';
 import store from '../store'
-import * as types from '../store/action-type'
+import action from '../store/action/Counter'
+// import * as types from '../store/action-type'
+// // 将redux中的属性映射成组件的状态
+// // 一般action是一个对象  我们用一个函数来创建action  这个函数叫做actionCreator
+// let action = {
+//   add(count){
+//     return {type:types.ADD,count}
+//   },
+//   minus(count){
+//     return {type:types.MINUS,count}
+//   }
+// }
 
-
-// 将redux中的属性映射成组件的状态
 export default class Counter extends React.Component {
   state = {
     number: store.getState().number
@@ -28,10 +37,7 @@ export default class Counter extends React.Component {
         <div>
           <button onClick={
             () => {
-              store.dispatch({
-                type: types.ADD,
-                count: 1
-              })
+              store.dispatch(action.add(1))
               // 状态改变后可以很low的用setState更新数据
               // this.setState({
               //   number:store.getState().number
@@ -46,10 +52,7 @@ export default class Counter extends React.Component {
           </p>
           <button onClick={
             () => {
-              store.dispatch({
-                type: types.MINUS,
-                count: 1
-              })
+              store.dispatch(action.minus(1))
               // 状态改变后可以很low的用setState更新数据
               // this.setState({
               //   number:store.getState().number
