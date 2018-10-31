@@ -15,7 +15,7 @@ import action from '../store/action/Counter'
 
 export default class Counter extends React.Component {
   state = {
-    number: store.getState().number
+    number: store.getState().counter.number
   }
   //
   componentWillMount(){
@@ -23,7 +23,7 @@ export default class Counter extends React.Component {
     // unsubscribe用于销毁该订阅
     this.unsubscribe = store.subscribe(()=>{
       this.setState({
-        number:store.getState().number
+        number:store.getState().counter.number
       })
     })
   }
