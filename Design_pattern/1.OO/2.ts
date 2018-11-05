@@ -1,5 +1,6 @@
 class Person {
   public name:string; //共有属性，自己，自己的子类可以访问
+  public hobby:string[];
   protected age:number; // 受保护的属性 自己 字段子类能访问 其他类不能访问
   private money:number; // 私有的 自己能访问， 自己的子类和其他类都不能访问
   constructor(name,age,money){
