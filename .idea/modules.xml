@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/bicai/ComProject/.idea/ComProject.iml" filepath="$USER_HOME$/bicai/ComProject/.idea/ComProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Start.iml" filepath="$PROJECT_DIR$/.idea/Start.iml" />
+      <module fileurl="file://$USER_HOME$/bicai/001晋商相关/WAP交易密码控件 2/.idea/WAP交易密码控件 2.iml" filepath="$USER_HOME$/bicai/001晋商相关/WAP交易密码控件 2/.idea/WAP交易密码控件 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Project/boxuegu/.idea/boxuegu.iml" filepath="$PROJECT_DIR$/../../Project/boxuegu/.idea/boxuegu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Project/D2admin/d2-admin-start-kit/.idea/d2-admin-start-kit.iml" filepath="$PROJECT_DIR$/../../Project/D2admin/d2-admin-start-kit/.idea/d2-admin-start-kit.iml" />
+      <module fileurl="file://$USER_HOME$/bicai/yi/.idea/differentindustries.iml" filepath="$USER_HOME$/bicai/yi/.idea/differentindustries.iml" />
+      <module fileurl="file://$USER_HOME$/PhpstormProjects/untitled1/.idea/untitled1.iml" filepath="$USER_HOME$/PhpstormProjects/untitled1/.idea/untitled1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Project/vue2-elm/.idea/vue2-elm.iml" filepath="$PROJECT_DIR$/../../Project/vue2-elm/.idea/vue2-elm.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="untitled1" />
+    <orderEntry type="module" module-name="differentindustries" />
+    <orderEntry type="module" module-name="ComProject" />
+    <orderEntry type="module" module-name="boxuegu" />
+    <orderEntry type="module" module-name="WAP交易密码控件 2" />
+    <orderEntry type="module" module-name="vue2-elm" />
+    <orderEntry type="module" module-name="d2-admin-start-kit" />
+  </component>
+</module>
