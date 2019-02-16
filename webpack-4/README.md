@@ -1,6 +1,5 @@
 # wenpack4 学习笔记
 
-
 ## 一、webpack 介绍
 
 ---
@@ -437,35 +436,167 @@ rules: [
 ## 三、 配置
 
 ### 多页面配置
+
 ---
+
 安装：`yarn add webpack webpack-cli -D`
+
 ```js
-let path = require('path')
-let HtmlWebpackPlugin = require('html-webpack-plugin')
+let path = require("path");
+let HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
-    // 多入口
-    mode:'development',
-    entry:{
-        home:'./src/index.js',
-        other:'./src/other.js'
-    },
-    output:{
-         filename:'[name].js',
-         path:path.resolve(__dirname,'dist')
-    },
-    plugins:[
-        new HtmlWebpackPlugin({
-            template:'./index.html',
-            filename:'home.html',
-            chunks:['home']
-        }),
-        new HtmlWebpackPlugin({
-            template:'./index.html',
-            filename:'other.html',
-            chunks:['other']
-        })
-    ]
-}
+  // 多入口
+  mode: "development",
+  entry: {
+    home: "./src/index.js",
+    other: "./src/other.js"
+  },
+  output: {
+    filename: "[name].js",
+    path: path.resolve(__dirname, "dist")
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./index.html",
+      filename: "home.html",
+      chunks: ["home"]
+    }),
+    new HtmlWebpackPlugin({
+      template: "./index.html",
+      filename: "other.html",
+      chunks: ["other"]
+    })
+  ]
+};
 ```
 
-### 配置source-map 
+### 配置 source-map
+
+```js
+  // 1) 源码映射 会单独生成一个sourcemap文件 出错了 会标识 当前报错的列和行 大 和 全
+  // devtool:'source-map', // 增加映射文件 可以帮我们调试源代码
+  // 2) 不会产生单独的文件 但是可以显示行和列
+  // devtool:'eval-source-map',
+  // 3)  不会产生列 但是是一个单独的映射文件
+  // devtool:'cheap-module-source-map', // 产生后你可以保留起来
+  // 4) 不会长生文件 集成在打包后的文件中 不会产生列
+   devtool:'cheap-module-eval-source-map',
+```
+
+### 配置实时打包 watch
+
+监控代码改变就进行打包
+
+```js
+  watch:true,
+  watchOptions:{ // 监控的选项
+    poll:1000, // 每秒 问我 1000次
+    aggregateTimeout:500, // 防抖 我一直输入代码
+    ignored:/node_modules/ // 不需要进行监控哪个文件
+  },
+```
+
+### webpack 小插件
+
+1. CleanWebpackPlugin 清空
+   删除文件夹 `yarn add clean-webpack-plugin -D`
+
+```js
+let CleanWebpackPlugin = require("clean-webpack-plugin");
+plugins: [new CleanWebpackPlugin(["dist"])];
+```
+
+2. CopyWebpackPlugin  
+   复制文件夹 `yarn add copy-webpack-plugin -D`
+
+   ```js
+   let CopyWebpackPlugin = require("copy-webapck-plugin");
+   plugins: [
+     new CopyWebpackPlugin([{ form: "./docs", to: "docs" }])
+     // to:默认复制到dist目录下
+   ];
+   ```
+
+3. webpack.BannerPlugin
+   版权声明 `yarn add webpack -D`
+   ```js
+   plugins: [new webpack.BannerPlugin("make 2019 by icey")];
+   ```
+
+### webpack 跨域问题
+
+
+
+#### 方法一、二 客户端代理配置
+
+```js
+
+// ============ 服务端 server.js
+//... 监听端口 3000
+let express = require('express')
+let app = express()
+let webpack = require('webpack')
+// app.get('/api/user',(req,res)=>{
+//   res.json({name:'王冰洋'})
+// })
+// app.get('/user',(req,res)=>{
+//   res.json({name:'王冰洋'})
+// })
+app.listen(3000,()=>{
+  console.log('3000 Ready');
+})
+
+// ============ 客户端 index.js
+// ...本地服务启动端口：8080 凡事含api的都进行代理
+let xhr = new XMLHttpRequest();
+xhr.open('GET','/api/user',true);
+xhr.onload = function(){
+    console.log(xhr.response)
+}
+xhr.send();
+
+// ============代理 webpack.config.js
+devServer:{
+    // 1）方法一
+    // proxy:{
+    //   '/api':{
+    //     target:'http://localhost:3000',
+    //     pathRewrite:{
+    //       '/api':''
+    //     }
+    //   }
+    // }
+    // 2）方法二 前端单纯的临时模拟数据
+    before(app){ // 提供的方法钩子
+      app.get('/api/user',(req,res)=>{
+        res.json({name:'王冰洋111aaa'})
+      })
+    },
+    // 3)方法三 见下面 有服务端 不用用代理来处理 能不能在服务端中启动webpack 端口用服务端端口
+    // 需要安装`webpack-dev-middleware` 用于支持webpack在服务端运行
+}
+
+```
+
+#### 方法三 服务端配置
+服务端代理的方法需要安装 `webpack-dev-middleware`
+```js
+let express = require('express')
+let app = express()
+let webpack = require('webpack')
+// 引入中间件
+let middle = require('webpack-dev-middleware')
+// 引入webpack配置
+let config = require('./webpack.config')
+// 编译webpack配置
+let compiler = webpack(config)
+// 通过middle中间件，在启动服务端时，同时在同一端口启动客户端，使端口相同解决跨域
+app.use(middle(compiler))
+
+app.get('/user',(req,res)=>{
+  res.json({name:'王冰洋'})
+})
+app.listen(3000,()=>{
+  console.log('http://localhost:3000 Ready');
+})
+```
