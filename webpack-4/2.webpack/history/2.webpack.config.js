@@ -12,6 +12,23 @@ module.exports = {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist")
   },
+  resolve:{ // 解析 第三方包 commonjs
+    modules:[path.resolve('node_modules')],
+    mainFields:['style','main'],// 指定第三方包的查找入口文件的路径 先找style 再找 main
+    mainFiles:[],// 入口文件的名字
+    extensions:['.js','.css','.json','.vue'],// 不加后缀名。自动搜索
+    alias:{ // 别名 vue vue.runtime
+      bootstrap:'bootstrap/dist/css/bootstrap.css'
+    }
+  },
+  module:{
+    rules:[
+      {
+        test:/\.css$/,
+        use:['style-loader','css-loader']
+      },
+    ]
+  },
   devServer: {
     // port: "3001",
     // host: "0.0.0.0",
@@ -36,10 +53,6 @@ module.exports = {
       })
     },
     // 3)有服务端 不用用代理来处理 能不能在服务端中启动webpack 端口用服务端端口
-    
-    
-
-
   },
   // watch: true,
   // watchOptions: {
@@ -63,6 +76,13 @@ module.exports = {
     }),
     new CleanWebpackPlugin(["./dist"]),
     new CopyWebpackPlugin([{ from: "docs", to: "docs" }]),
-    new webpack.BannerPlugin("make 2019 by icey")
+    new webpack.BannerPlugin("make 2019 by icey"),
+
+    new webpack.DefinePlugin({
+      DEV:JSON.stringify('production'), // 或者用JSON.stringify
+      FLAG:'true', // 布尔值不需要
+      expression:"'1+1'", // 数值相加的话如果想要结构的话不能JSON.stringify，JSON.stringify会把字符串传人
+      result:'1+1'
+    })
   ]
 };

@@ -8,5 +8,5 @@
 </head>
 <body>
     <button class="btn btn-danger">按钮</button>
-</body>
+<script type="text/javascript" src="home.js"></script></body>
 </html>

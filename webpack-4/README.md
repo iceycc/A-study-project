@@ -72,7 +72,8 @@
        devServer:{ // 开发服务器配置
            port:'3000', // 配置端口
            progress:true, // 显示进度条
-           contentBase:'./build'
+           contentBase:'./build', //??
+           open:true,
        }
    ```
 6. 快捷启动
@@ -525,8 +526,6 @@ plugins: [new CleanWebpackPlugin(["dist"])];
 
 ### webpack 跨域问题
 
-
-
 #### 方法一、二 客户端代理配置
 
 ```js
@@ -579,24 +578,258 @@ devServer:{
 ```
 
 #### 方法三 服务端配置
-服务端代理的方法需要安装 `webpack-dev-middleware`
-```js
-let express = require('express')
-let app = express()
-let webpack = require('webpack')
-// 引入中间件
-let middle = require('webpack-dev-middleware')
-// 引入webpack配置
-let config = require('./webpack.config')
-// 编译webpack配置
-let compiler = webpack(config)
-// 通过middle中间件，在启动服务端时，同时在同一端口启动客户端，使端口相同解决跨域
-app.use(middle(compiler))
 
-app.get('/user',(req,res)=>{
-  res.json({name:'王冰洋'})
-})
-app.listen(3000,()=>{
-  console.log('http://localhost:3000 Ready');
-})
+服务端代理的方法需要安装 `webpack-dev-middleware`
+
+```js
+let express = require("express");
+let app = express();
+let webpack = require("webpack");
+// 引入中间件
+let middle = require("webpack-dev-middleware");
+// 引入webpack配置
+let config = require("./webpack.config");
+// 编译webpack配置
+let compiler = webpack(config);
+// 通过middle中间件，在启动服务端时，同时在同一端口启动客户端，使端口相同解决跨域
+app.use(middle(compiler));
+
+app.get("/user", (req, res) => {
+  res.json({ name: "王冰洋" });
+});
+app.listen(3000, () => {
+  console.log("http://localhost:3000 Ready");
+});
 ```
+
+### resolve 属性配置
+
+---
+
+1. 设置别名
+2. 指定查找目录
+3. 自动添加拓展名、
+
+```js
+// index.js
+import './style'; // 无拓展名 自动检索
+import 'bootstrap'; // 我们想要引入的是css 但是直接这么引入 默认这样引入的是js 需要配置别名 将 boostrap指向 bootstrap/dist/css/bootstrap
+
+// webpack.config.js
+    modules:[path.resolve('node_modules')], // 指定模块路径
+    mainFields:['style','main'],// 指定第三方包的查找入口文件的路径 先找style 再找 main
+    mainFiles:[],// 入口文件的名字
+    extensions:['.js','.css','.json','.vue'],// 不加后缀名。自动搜索
+    alias:{ // 别名 vue vue.runtime
+      bootstrap:'bootstrap/dist/css/bootstrap.css'
+    }
+```
+
+### 定义环境变量
+
+---
+
+使用的是 webpack 的内置插件
+
+```js
+// index.js
+if (DEV == "development") {
+  // todo
+} else {
+  // todo
+}
+// 配置环境变量
+new webpack.DefinePlugin({
+  // DEV:"'development'", // console.log('dev') 可以加双引号、
+  DEV: JSON.stringify("production"), // 或者用JSON.stringify
+  FLAG: "true", // 布尔值不需要
+  expression: "1+1" // 数值相加的话如果想要结构的话不能JSON.stringify，JSON.stringify会把字符串传人
+});
+```
+
+实际情况要分两个文件进行开发和生产的分别配置
+
+- 安装：`yarn add webpack-merge -D`何必配置
+
+```js
+// ====== webpack.base.js
+let path = require("path");
+let webpack = require("webpack");
+module.exports = {
+  entry: { home: "./src/index.js" },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      }
+    ]
+  },
+  output: {
+    filename: "[name].js",
+    path: path.resolve(__dirname, "dist")
+  },
+  plugins: []
+};
+// ====== webpack.dev.js
+let { smart } = require("webpack-merge");
+let base = require("./webpack.base");
+module.exports = smart(base, {
+  mode: "development",
+  devServer: {},
+  devtool: "source-map"
+});
+// ====== webpack.prod.
+let { smart } = require("webpack-merge");
+let base = require("./webpack.base.js");
+
+module.exports = smart(base, {
+  mode: "production",
+  optimization: {
+    minimizer: []
+  },
+  plugins: []
+});
+```
+
+## webpack 优化
+
+---
+
+安装`yarn add webpack webpack-cli html-webpack-plugin @babel/core babel-loader @babel/preset-env @babel/preset-react -D`
+
+1. noPase:例如 jquery，其实 jq 是个独立的库，不需要别的依赖，在打包时默认会进行解析是否需要引入其他模块，浪费时间。可以 noPase 忽略，不去解析其中的依赖库
+2. exclude 和 include
+
+```js
+module:{
+  noParse:/jqurey/,// 不去解析jquery中的依赖库
+  rules:[
+      {
+        test: /\.js$/,
+        exclude: /node_modules/, // 排出和包含
+        include: path.resolve('src'), // 排出和包含
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-env',
+              '@babel/preset-react'
+            ],
+            plugins:[
+              '@babel/plugin-syntax-dynamic-import'
+            ]
+          }
+        }
+      },
+  ],
+}
+```
+
+3. IgnorePlugin:
+   moment 会自动引入`./locale/`全部的语言包，可以忽略全部的语言包，按需引入有用的语言包
+   手动引入 `import 'moment/locale/zh-cn'`
+
+```js
+plugins: [
+  new webpack.IgnorePlugin(/\.\/locale/, /moment/) // 忽略语言包，需要手动import对应的语言包 import 'moment/locale/zh-cn'
+];
+```
+
+4. 动态连接库 dllPlugin: output 中设置 library 和 libraryTarget
+   会将打包后的文件通过某一种规范声明称变量，暴露出去
+   > manifest.json 任务清单
+
+```js
+// ===== webpack.dll.js  专门打包静态类库文件的配置
+let path = require("path");
+let webpack = require("webpack");
+module.exports = {
+  mode: "development",
+  entry: {
+    react: ["react", "react-dom"] // 单独打包大的类库文件
+  },
+  output: {
+    filename: "_dll_[name].js", // 产生的文件名
+    path: path.resolve(__dirname, "dist"),
+    library: "_dll_[name]" // _dll_react 出的变量就什么名
+    //libraryTarget:'var' // commonjs var this umd....
+  },
+  plugins: [
+    new webpack.DllPlugin({
+      // name == library
+      name: "_dll_[name]",
+      path: path.resolve(__dirname, "dist", "manifest.json")
+    })
+  ]
+};
+
+// ==== webpack.config.js 配置先从manifest.json招对应的类库，找不到再进行打包
+plugins: [
+  new webpack.DllReferencePlugin({
+    manifest: path.resolve(__dirname, "dist", "manifest.json") //
+  })
+];
+```
+
+5. Happypack 多线程打包
+
+`yarn add happypack -D`
+
+```js
+// 引入插件
+let happypack = require('happypaclk')
+// 配置
+plugins: [
+  new happypack({
+    id: "css",
+    use: ["style-loader", "css-loader"]
+  }),
+      new happypack({
+      id:'js',
+      use:[
+        {
+          loader:'babel-loader',
+          options:{
+            presets:[
+              '@babel/preset-env',
+              '@babel/preset-react'
+            ]
+          }
+        }
+      ]
+    }),
+],
+module:{
+  rules:[
+    {
+      test:/\.css$/,
+      use:'happypack/loader?id=css'
+    },
+        {
+      test:/\.js$/,
+      use:'happypack/loader?id=js'
+    }
+  ]
+}
+```
+
+### webpack自带优化 
+--- 
+1. tree-shaking：import 在生产环境下 会自动去除掉没用的代码。require的无效
+2. es6 模块会把require的结果放到defalut上 ，require不支持tree-shaking
+```js
+let calc = require('./test');
+console.log(calc.default.sum(1,2));
+```
+3. cope hosting 作用域提升 
+```js
+let a = 1; 
+let b = 2;
+let c = 3;
+let d = a+b+c; // 在webpack中自动省略 可以简化的代码 webpack生产模式 这些无用声明会省略 直接输出6
+console.log(d,'-------------');
+```
+
+### 抽离公共代码
+splitChunks
