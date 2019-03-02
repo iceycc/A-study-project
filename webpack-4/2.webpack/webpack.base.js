@@ -8,7 +8,7 @@ module.exports = {
     path:path.resolve(__dirname,'dist')
   },
   resolve:{
-    modules:[path.resol ve('node_modules')],
+    modules:[path.resolve('node_modules')],
     extensions:['.js','.css','.json','.vue'],
   alias:{
     bootstrap:'bootstrap/dist/css/bootstrap.css'
@@ -33,4 +33,21 @@ module.exports = {
       }
     ]
   }
+}
+
+class A {
+  async get(){
+    let res = await new Promise((resolve,reject)=>{
+      resolve('11')
+    })
+    console.log(res)
+  }
+}
+
+let fn = new A()
+fn.get()
+
+@fn
+function C(){
+  
 }

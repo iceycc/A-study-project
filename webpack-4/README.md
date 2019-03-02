@@ -814,22 +814,121 @@ module:{
 }
 ```
 
-### webpack自带优化 
---- 
-1. tree-shaking：import 在生产环境下 会自动去除掉没用的代码。require的无效
-2. es6 模块会把require的结果放到defalut上 ，require不支持tree-shaking
+### webpack 自带优化
+
+---
+
+1. tree-shaking：import 在生产环境下 会自动去除掉没用的代码。require 的无效
+2. es6 模块会把 require 的结果放到 defalut 上 ，require 不支持 tree-shaking
+
 ```js
-let calc = require('./test');
-console.log(calc.default.sum(1,2));
+let calc = require("./test");
+console.log(calc.default.sum(1, 2));
 ```
-3. cope hosting 作用域提升 
+
+3. cope hosting 作用域提升
+
 ```js
-let a = 1; 
+let a = 1;
 let b = 2;
 let c = 3;
-let d = a+b+c; // 在webpack中自动省略 可以简化的代码 webpack生产模式 这些无用声明会省略 直接输出6
-console.log(d,'-------------');
+let d = a + b + c; // 在webpack中自动省略 可以简化的代码 webpack生产模式 这些无用声明会省略 直接输出6
+console.log(d, "-------------");
 ```
 
 ### 抽离公共代码
-splitChunks
+
+splitChunks  
+ 需要是多页面应用，抽离公共模块
+
+```js
+  optimization:{ // 原来叫commonChunkPlugins
+    splitChunks:{ // 分割代码块
+      cacheGroups:{ // 缓存组
+        common:{ // 公共的模块
+          chunks:'initial',
+          minSize:0, // 公共文件大小
+          minChunks:2, // 复用几次以上就抽离
+        },
+        vendor:{ // 第三方的
+          priority:1, // 增加权重 先抽离第三方模块
+          test:/node_modules/, // 把你抽离出来
+          chunks: 'initial',
+          minSize: 0,
+          minChunks: 2
+        }
+      }
+    }
+  },
+```
+
+### webpack 懒加载
+vue路由懒加载，react路由懒加载
+`@babel/plugin-syntax-dynamic-import`
+
+```js
+// index.js
+let button = document.createElement("button");
+button.innerHTML = "按钮";
+button.addEventListener("click", function() {
+  //  es6 草案中的语法 jsonp实现动态加载文件
+  import("./source.js").then(() => {
+    console.log('source',data.default) // wbywby
+  });
+});
+
+// source.js
+export default 'wbywby'
+```
+
+```js
+// webpack.config.js
+plugins: ["@babel/plugin-syntax-dynamic-import"];
+```
+
+### 热更新
+组件更新 不刷新页面进行更新。增量更新
+```js
+// 1.
+  devServer: {
+    hot:true, //  启用热更新
+    port: 3000,
+    open: true,
+    contentBase: './dist'
+  },
+
+  // 2.配置
+    new webpack.NamedModulesPlugin(), // 哪个模块更新了打印更新的模块路径
+
+    new webpack.HotModuleReplacementPlugin() // 热更新插件
+
+```
+
+```js
+// 页面
+if(module.hot){
+  module.hot.accept('./source',()=>{
+    console.log('文件更新')
+    let str = require('./source')
+    console.log(str)
+
+  })
+}
+```
+
+## tapable
+---
+### tapable介绍
+webpack本质上是一种事件流的机制，它的工作流程就是将各个插件串联起来，而实现这一切的核心就是tapable。tapabel有点类似于nodejs的event库，核心原理也是依赖于发布订阅模式。
+```js
+// Compiler.js
+const {
+	Tapable,
+	SyncHook,
+	SyncBailHook,
+	AsyncParallelHook,
+	AsyncSeriesHook
+} = require('tapable)
+```
+
+### 原理略 todo代补充
