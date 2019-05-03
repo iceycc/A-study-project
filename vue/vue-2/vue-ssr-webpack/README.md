@@ -1,0 +1,1 @@
+## yarn add webpack webpack-cli babel-loader @babel/preset-env vue vue-template-compiler vue-loader vue-style-loader css-loader html-webpack-plugin webpack-merge

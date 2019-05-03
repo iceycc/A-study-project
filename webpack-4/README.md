@@ -863,7 +863,8 @@ splitChunks
 ```
 
 ### webpack 懒加载
-vue路由懒加载，react路由懒加载
+
+vue 路由懒加载，react 路由懒加载
 `@babel/plugin-syntax-dynamic-import`
 
 ```js
@@ -873,12 +874,12 @@ button.innerHTML = "按钮";
 button.addEventListener("click", function() {
   //  es6 草案中的语法 jsonp实现动态加载文件
   import("./source.js").then(() => {
-    console.log('source',data.default) // wbywby
+    console.log("source", data.default); // wbywby
   });
 });
 
 // source.js
-export default 'wbywby'
+export default "wbywby";
 ```
 
 ```js
@@ -887,7 +888,9 @@ plugins: ["@babel/plugin-syntax-dynamic-import"];
 ```
 
 ### 热更新
+
 组件更新 不刷新页面进行更新。增量更新
+
 ```js
 // 1.
   devServer: {
@@ -906,20 +909,23 @@ plugins: ["@babel/plugin-syntax-dynamic-import"];
 
 ```js
 // 页面
-if(module.hot){
-  module.hot.accept('./source',()=>{
-    console.log('文件更新')
-    let str = require('./source')
-    console.log(str)
-
-  })
+if (module.hot) {
+  module.hot.accept("./source", () => {
+    console.log("文件更新");
+    let str = require("./source");
+    console.log(str);
+  });
 }
 ```
 
 ## tapable
+
 ---
-### tapable介绍
-webpack本质上是一种事件流的机制，它的工作流程就是将各个插件串联起来，而实现这一切的核心就是tapable。tapabel有点类似于nodejs的event库，核心原理也是依赖于发布订阅模式。
+
+### tapable 介绍
+
+webpack 本质上是一种事件流的机制，它的工作流程就是将各个插件串联起来，而实现这一切的核心就是 tapable。tapabel 有点类似于 nodejs 的 event 库，核心原理也是依赖于发布订阅模式。
+
 ```js
 // Compiler.js
 const {
@@ -931,4 +937,73 @@ const {
 } = require('tapable)
 ```
 
-### 原理略 todo代补充
+### 原理略 todo 代补充
+
+### 手写 webpack
+
+## 手写 webpack 插件
+
+---
+
+### webpack 流程
+
+### webpack 插件
+
+目标： 实现同步的和异步代
+
+1. 安装 webpack webpack-cli.
+2. 配置
+
+```js
+```
+
+3. 书写 plugins
+   `webpack/lib/compiler.js`中有插件引入代方式和原理
+   ```js
+   // 同步插件sync DonePlugin.js
+   class DonePlugin {
+     apply(compiler) {
+       // compiler.hooks
+       console.log(1);
+       compiler.hooks.done.tap("DonePlugin", stats => {
+         console.log("编译完成~~~");
+       });
+     }
+   }
+   module.exports = DonePlugin;
+   // 异步插件async AsyncPlugin.js
+   class AsyncPlugin {
+     apply(compiler) {
+       console.log(2);
+       compiler.hooks.emit.tapAsync("AsyncPlugin", (compliation, cb) => {
+         setTimeout(() => {
+           console.log("文件发射出来 等一下");
+           cb();
+         }, 1000);
+       });
+       compiler.hooks.emit.tapPromise("AsyncPlugin", compliation => {
+         return new Promise((resolve, reject) => {
+           setTimeout(() => {
+             console.log("在等一秒");
+             resolve();
+           }, 1000);
+         });
+       });
+     }
+   }
+   module.exports = AsyncPlugin;
+   ```
+4. webpack.config.js 中引入插件
+   ```js
+   let path = require("path");
+   let DonePlugin = require("DonePlugin");
+   module.exports = {
+     mode: "development",
+     entry: "./src/index.js",
+     output: {
+       filename: "[name].js",
+       path: path.resolve(__dirname, "dist")
+     },
+     plugins: [new DonePlugin()]
+   };
+   ```
