@@ -5,229 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c236ccc-a547-49e5-a672-0bacbb373646" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Project/vue2-elm/vue.config.js" afterDir="false" />
-      <change afterPath="$USER_HOME$/bicai/yi/src/store/modules/opening/index.js" afterDir="false" />
-      <change afterPath="$USER_HOME$/bicai/yi/static/lib/PassInputZhengzhou/pwd.html" afterDir="false" />
-      <change afterPath="$USER_HOME$/bicai/yi/static/lib/PassInputZhengzhou/pwd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Project/D2admin/d2-admin-start-kit/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project/D2admin/d2-admin-start-kit/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Project/hello-world/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project/hello-world/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Project/hello-world/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project/hello-world/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Project/hello-world/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project/hello-world/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Project/vue2-elm/README-en.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project/vue2-elm/README-en.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Project/vue2-elm/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project/vue2-elm/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/build/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/build/check-versions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/build/dev-client.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/build/dev-server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/build/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/build/vue-loader.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/build/webpack.base.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/build/webpack.dev.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/build/webpack.dll.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/build/webpack.prod.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/config/dev.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/config/prod.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/doc/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/move-dist-to-muzhuang.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/static/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/static/bg-img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myWork/uzhuang/uzhuang_vue/web.zhuge/static/hotcss.js" beforeDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/build/webpack.base.conf.js" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/build/webpack.base.conf.js" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/index.html" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/index.html" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/App.vue" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/App.vue" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/Constant.js" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/Constant.js" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/components/password/PassInputZhengzhou.vue" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/components/password/PassInputZhengzhou.vue" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/mixins/opening/opening1-mixins.js" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/mixins/opening/opening1-mixins.js" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/mixins/opening/opening2-mixins.js" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/mixins/opening/opening2-mixins.js" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/mixins/opening/opening3-mixins.js" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/mixins/opening/opening3-mixins.js" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/router/index.js" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/router/index.js" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/service/api/api.JINSHANG.js" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/service/api/api.JINSHANG.js" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/service/api/api.ZHENGZHOU.js" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/service/api/api.ZHENGZHOU.js" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/service/http/http.JINSHANG.js" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/service/http/http.JINSHANG.js" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/service/http/http.ZHENGZHOU.js" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/service/http/http.ZHENGZHOU.js" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/store/index.js" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/store/index.js" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/views/buy/Buying.vue" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/views/buy/Buying.vue" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/views/login/login__.vue" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/views/login/login__.vue" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/views/open/Opening1.vue" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/views/open/Opening1.vue" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/views/open/Opening2.vue" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/views/open/Opening2.vue" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/views/open/Opening3.vue" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/views/open/Opening3.vue" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/views/product/ProductReservation.vue" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/views/product/ProductReservation.vue" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/views/rechange/Recharge.vue" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/views/rechange/Recharge.vue" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/views/riskEvaluation/FengxianResult.vue" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/views/riskEvaluation/FengxianResult.vue" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/views/safe/ResetPayPassword.vue" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/views/safe/ResetPayPassword.vue" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/src/views/testPages/TestPage.vue" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/src/views/testPages/TestPage.vue" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/static/lib/jquery-1.12.2.min.js" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/static/lib/PassInputJinShang/jquery-1.12.2.min.js" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/static/lib/jquery.base64.js" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/static/lib/PassInputJinShang/jquery.base64.js" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/static/lib/login-password-widget.min.js" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/static/lib/PassInputJinShang/login-password-widget.min.js" afterDir="false" />
-      <change beforePath="$USER_HOME$/bicai/yi/static/lib/password-widget.min.js" beforeDir="false" afterPath="$USER_HOME$/bicai/yi/static/lib/PassInputJinShang/password-widget.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="api.ZHENGZHOU.js" pinned="false" current-in-tab="true">
-              <entry file="file://$USER_HOME$/bicai/yi/src/service/api/api.ZHENGZHOU.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="307">
-                    <caret line="81" column="21" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="21" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-              <entry file="file://$USER_HOME$/bicai/yi/src/store/modules/opening/index.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="300">
-                    <caret line="15" column="21" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="21" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-              <entry file="file://$USER_HOME$/bicai/yi/src/store/modules/bank/index.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="60">
-                    <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5179181">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="opening1-mixins.js" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/bicai/yi/src/mixins/opening/opening1-mixins.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="241">
-                  <caret line="362" column="40" selection-start-line="362" selection-start-column="10" selection-end-line="362" selection-end-column="40" />
-                  <folding>
-                    <element signature="e#0#32#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="opening2-mixins.js" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/bicai/yi/src/mixins/opening/opening2-mixins.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="206">
-                  <caret line="276" selection-start-line="276" selection-end-line="280" selection-end-column="31" />
-                  <folding>
-                    <element signature="e#0#32#0" expanded="true" />
-                    <element signature="e#1051#2415#0" />
-                    <element signature="e#2449#2813#0" />
-                    <element signature="e#2841#5823#0" />
-                    <element signature="e#5872#6162#0" />
-                    <element signature="e#6380#6928#0" />
-                    <element signature="e#11174#11464#0" />
-                    <element signature="e#11507#16774#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="opening3-mixins.js" pinned="false" current-in-tab="true">
-            <entry file="file://$USER_HOME$/bicai/yi/src/mixins/opening/opening3-mixins.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="185">
-                  <caret line="113" column="22" selection-start-line="113" selection-start-column="11" selection-end-line="113" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#0#32#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="util.check.js" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/bicai/yi/src/libs/util/check/util.check.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="189">
-                  <caret line="95" column="12" selection-start-line="95" selection-start-column="2" selection-end-line="95" selection-end-column="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Opening3.vue" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/bicai/yi/src/views/open/Opening3.vue">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="397">
-                  <caret line="104" column="32" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="40" />
-                  <folding>
-                    <element signature="e#3608#3663#0" expanded="true" />
-                    <element signature="e#10166#11686#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="Opening2.vue" pinned="false" current-in-tab="true">
-            <entry file="file://$USER_HOME$/bicai/yi/src/views/open/Opening2.vue">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="232">
-                  <caret line="87" column="14" lean-forward="true" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
-                  <folding>
-                    <element signature="n#style#0;n#span#0;n#section#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#section#0;n#section#3;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#input#0;n#section#0;n#section#3;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                    <element signature="e#2980#3033#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PassInputZhengzhou.vue" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/bicai/yi/src/components/password/PassInputZhengzhou.vue">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/bicai/yi/src/App.vue">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="380">
-                  <caret line="19" selection-start-line="19" selection-end-line="19" />
-                  <folding>
-                    <element signature="e#420#450#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -308,7 +111,7 @@
       <dir>$USER_HOME$/bicai/ComProject/finsuit-h5/build</dir>
       <dir>$USER_HOME$/bicai/ComProject/finsuit-h5/config</dir>
       <dir>$USER_HOME$/bicai/yi/src/view</dir>
-      <dir>$PROJECT_DIR$/../../Project/D2admin/d2-admin-start-kit/src/store/modules/d2admin/modules</dir>
+      <dir>D:/Project/D2admin/d2-admin-start-kit/src/store/modules/d2admin/modules</dir>
       <dir>$USER_HOME$/bicai/yi/src/views</dir>
       <dir>$USER_HOME$/bicai/ComProject/finsuit-h5/src</dir>
       <dir>$USER_HOME$/bicai/yi</dir>
@@ -317,12 +120,11 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/bicai/yi" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/bicai/yi/src/store/modules/account/index.js" />
         <option value="$USER_HOME$/bicai/yi/src/views/jinshang/login/Login.vue" />
         <option value="$USER_HOME$/bicai/yi/src/mixins/login-mixins.js" />
         <option value="$USER_HOME$/bicai/yi/src/views/login/Login.vue" />
@@ -373,6 +175,7 @@
         <option value="$USER_HOME$/bicai/yi/src/service/api/api.ZHENGZHOU.js" />
         <option value="$USER_HOME$/bicai/yi/src/views/open/Opening3.vue" />
         <option value="$USER_HOME$/bicai/yi/src/mixins/opening/opening3-mixins.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -381,69 +184,16 @@
     <bower-package value="" />
     <bower.json value="" />
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
-  </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/../../Project/D2admin/d2-admin-start-kit/node_modules" />
-    <handled-path value="$PROJECT_DIR$/../../Project/vue2-elm/node_modules" />
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-    <handled-path value="$PROJECT_DIR$/plan1-vue/node_modules" />
-    <handled-path value="$PROJECT_DIR$/react-code1/node_modules" />
-    <handled-path value="$PROJECT_DIR$/react-code2/node_modules" />
-    <handled-path value="$PROJECT_DIR$/react-code3-router/node_modules" />
-    <handled-path value="$PROJECT_DIR$/react-redux/node_modules" />
-    <handled-path value="$USER_HOME$/bicai/ComProject/finsuit-h5/node_modules" />
-    <handled-path value="$USER_HOME$/bicai/yi/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/../../Project/D2admin/d2-admin-start-kit/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/1.前端工程化/code1/UI_Test/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/1.前端工程化/code1/Util_Test/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/1.前端工程化/code2/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/1.前端工程化/szhmqd21_node/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/3.Angular/◊ ¡œ/basic/todo-mvc-app/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/3.Angular/◊ ¡œ/video code/dashboard-server/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/3.Angular/◊ ¡œ/video code/itcast-hmr/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/3.Angular/◊ ¡œ/video code/my-app/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/4.MVVM/代码/demo/node_modules/vue/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/5.十次方项目/归档/frontend/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/5.十次方项目/归档/frontend/public/plugins/bootstrap/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/5.十次方项目/接口服务源码/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/5.十次方项目/项目源码/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/5.十次方项目/项目源码/public/plugins/bootstrap/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/6.数据流框架的应用/cart-mobx/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/6.数据流框架的应用/cart-vuex/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/6.数据流框架的应用/mobx-study/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/6.数据流框架的应用/react-redux-demo/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/6.数据流框架的应用/redux-api-使用redux-thunk中间件/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/boxuegu/6.数据流框架的应用/vuex-api/package.json" />
-      <path value="$PROJECT_DIR$/../../Project/vue2-elm/package.json" />
-      <path value="$PROJECT_DIR$/package.json" />
-      <path value="$PROJECT_DIR$/plan1-vue/package.json" />
-      <path value="$PROJECT_DIR$/react-code1/package.json" />
-      <path value="$PROJECT_DIR$/react-code2/package.json" />
-      <path value="$PROJECT_DIR$/react-code3-router/package.json" />
-      <path value="$PROJECT_DIR$/react-redux/package.json" />
-      <path value="$USER_HOME$/bicai/ComProject/finsuit-h5/package.json" />
-      <path value="$USER_HOME$/bicai/yi/package.json" />
-    </packageJsonPaths>
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-11" />
+    <option name="width" value="1940" />
+    <option name="height" value="2111" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -458,119 +208,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yi" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yi" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="password" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mixins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mixins" type="462c0819:PsiDirectoryNode" />
-              <item name="opening" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="open" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="testPages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yi" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yi" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yi" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="PassInputZhengzhou" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="d2-admin-start-kit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue2-elm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Start" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue2-elm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="A-study-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A-study-project" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -580,8 +219,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="10.3.0" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.15.3" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -621,10 +261,18 @@
     </option>
   </component>
   <component name="RunManager" selected="Node.js.index.js">
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:8080/#/Login" />
-    <configuration name="1.继承.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Design_pattern/1.OO/1.继承.js" working-dir="$PROJECT_DIR$/Design_pattern/1.OO" />
-    <configuration name="1.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="1.js" working-dir="$PROJECT_DIR$/Design_pattern/1.OO" />
-    <configuration name="index.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/Design_pattern/html" />
+    <configuration default="true" type="JavascriptDebugType" uri="http://localhost:8080/#/Login">
+      <method v="2" />
+    </configuration>
+    <configuration name="1.继承.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Design_pattern/1.OO/1.继承.js" working-dir="$PROJECT_DIR$/Design_pattern/1.OO">
+      <method v="2" />
+    </configuration>
+    <configuration name="1.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="1.js" working-dir="$PROJECT_DIR$/Design_pattern/1.OO">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/Design_pattern/html">
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Node.js.1.继承.js" />
       <item itemvalue="Node.js.1.js" />
@@ -672,11 +320,13 @@
       <workItem from="1541335385360" duration="24897000" />
       <workItem from="1541552051934" duration="182000" />
       <workItem from="1541553314746" duration="61688000" />
+      <workItem from="1563069527572" duration="629000" />
+      <workItem from="1563801204010" duration="181000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278221000" />
+    <option name="totallyTimeSpent" value="279031000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -688,59 +338,60 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="-7" y="0" width="1293" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.039800994" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.27148014" side_tool="true" weight="0.32089552" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="NativeScript" order="8" weight="0.3283582" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49963897" weight="0.329602" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49819493" weight="0.3221393" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.72851986" visible="true" weight="0.20273632" />
-      <window_info anchor="bottom" id="RNConsole" order="10" weight="0.329602" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15379061" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Nativescript Palette" order="4" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49963897" weight="0.13059701" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23150358" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49963897" weight="0.13059701" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49819493" weight="0.3221393" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8166065" weight="0.39925373" />
-      <window_info anchor="bottom" id="TypeScript" order="14" weight="0.329602" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.039800994" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="NativeScript" order="8" weight="0.3283582" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="RNConsole" order="10" weight="0.329602" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.72851986" visible="true" weight="0.1521217" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49963897" weight="0.329602" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.27148014" side_tool="true" weight="0.32089552" />
+      <window_info anchor="bottom" id="TypeScript" order="14" weight="0.329602" />
+      <window_info anchor="bottom" id="GraphQL" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Nativescript Palette" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49819493" weight="0.3221393" />
-      <window_info anchor="bottom" id="NativeScript" order="8" weight="0.3283582" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10830325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.28233832" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TypeScript" order="14" weight="0.329602" />
-      <window_info anchor="bottom" id="RNConsole" order="10" weight="0.329602" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49963897" visible="true" weight="0.13059701" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.72851986" weight="0.25995025" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.27148014" side_tool="true" weight="0.32089552" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49963897" weight="0.329602" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49819493" weight="0.3221393" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8166065" weight="0.39925373" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.28233832" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="NativeScript" order="8" weight="0.3283582" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="RNConsole" order="10" weight="0.329602" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.72851986" weight="0.25995025" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49963897" weight="0.329602" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.27148014" side_tool="true" weight="0.32089552" />
+      <window_info anchor="bottom" id="TypeScript" order="14" weight="0.329602" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Nativescript Palette" order="4" />
-      <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -751,9 +402,6 @@
         <option value="$PROJECT_DIR$/Design_pattern/1.OO/2.js" />
       </list>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -770,453 +418,68 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$USER_HOME$/bicai/yi/src/views/rechange/Recharge.vue</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="21" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/bicai/yi/src/service/api/api.js">
+    <entry file="file://$USER_HOME$/bicai/yi/src/views/product/OrderNextSuccess.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/service/index.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/views/account/BankAccount.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/service/api/api.watch.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/views/login/Login.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/components/commons/JsSelect.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/mixins/login-mixins.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/components/commons/BankSelect.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/mixins/template-mixinx.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/views/buy/SureBuy.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/views/bankDetail/BankDetail.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/views/buy/Buying.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/views/login/login__.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/router/index.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/views/product/ProductReservation.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/views/rechange/Recharge.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/views/riskEvaluation/FengxianResult.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/views/safe/ResetPayPassword.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/service/api/api.JINSHANG.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/store/modules/account/index.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/plugin/request/_axios.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/service/http/http.JINSHANG.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/store/modules/bank/index.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/store/modules/common/index.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/store/modules/theme.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/views/open/Opening1.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/mixins/index.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/store/index.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/components/password/PassInputZhengzhou/pwd.html" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/components/password/PassInputZhengzhou/pwd.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/router/routes.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/Constant.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/index.html" />
+    <entry file="file://$USER_HOME$/bicai/yi/build/webpack.base.conf.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/App.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/mixins/opening/opening1-mixins.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/components/password/PassInput.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/views/testPages/TestPage.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/service/http/http.ZHENGZHOU.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/components/password/PassInputZhengzhou.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/store/modules/opening/index.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/service/api/api.ZHENGZHOU.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/static/lib/PassInputZhengzhou/pwd.html" />
+    <entry file="file://$USER_HOME$/bicai/yi/static/lib/PassInputZhengzhou/pwd.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/mixins/opening/opening2-mixins.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/views/open/Opening2.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/views/open/Opening3.vue" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/libs/util/check/util.check.js" />
+    <entry file="file://$USER_HOME$/bicai/yi/src/mixins/opening/opening3-mixins.js" />
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/views/buy/BuyFailed.vue">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding>
-            <element signature="e#454#489#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/views/product/OrderNextSuccess.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-          <folding>
-            <element signature="e#478#506#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/service/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/views/account/BankAccount.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="99" column="19" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
-          <folding>
-            <element signature="e#2219#2247#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/service/api/api.watch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/views/login/Login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="80" selection-start-line="80" selection-end-line="81" />
-          <folding>
-            <element signature="e#1721#1748#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/components/commons/JsSelect.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2260">
-          <caret line="113" column="21" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/mixins/login-mixins.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="55" column="14" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/components/commons/BankSelect.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="104" column="12" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/mixins/template-mixinx.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/views/buy/SureBuy.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-592" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/views/bankDetail/BankDetail.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/views/buy/Buying.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/views/login/login__.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="223" selection-start-line="223" selection-end-line="223" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#19#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/views/product/ProductReservation.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="380" selection-start-line="380" selection-end-line="380" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/views/rechange/Recharge.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="235" column="45" selection-start-line="235" selection-start-column="45" selection-end-line="235" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/views/riskEvaluation/FengxianResult.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/views/safe/ResetPayPassword.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="192" column="38" selection-start-line="192" selection-start-column="38" selection-end-line="192" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/service/api/api.JINSHANG.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/store/modules/account/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/plugin/request/_axios.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/service/http/http.JINSHANG.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/store/modules/bank/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/store/modules/common/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/store/modules/theme.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/views/open/Opening1.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="70" column="21" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/mixins/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/components/password/PassInputZhengzhou/pwd.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/components/password/PassInputZhengzhou/pwd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#span#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#span#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#span#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#span#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#span#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/router/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="282" column="20" lean-forward="true" selection-start-line="282" selection-start-column="20" selection-end-line="282" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/Constant.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/build/webpack.base.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#420#450#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/mixins/opening/opening1-mixins.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="362" column="40" selection-start-line="362" selection-start-column="10" selection-end-line="362" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/components/password/PassInput.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/views/testPages/TestPage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/service/http/http.ZHENGZHOU.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/components/password/PassInputZhengzhou.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/store/modules/opening/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/service/api/api.ZHENGZHOU.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="81" column="21" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/static/lib/PassInputZhengzhou/pwd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/static/lib/PassInputZhengzhou/pwd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#span#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#span#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#span#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#span#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#span#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/mixins/opening/opening2-mixins.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="276" selection-start-line="276" selection-end-line="280" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-            <element signature="e#1051#2415#0" />
-            <element signature="e#2449#2813#0" />
-            <element signature="e#2841#5823#0" />
-            <element signature="e#5872#6162#0" />
-            <element signature="e#6380#6928#0" />
-            <element signature="e#11174#11464#0" />
-            <element signature="e#11507#16774#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/views/open/Opening2.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="87" column="14" lean-forward="true" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#section#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#section#3;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#section#0;n#section#3;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#2980#3033#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/views/open/Opening3.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="104" column="32" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="40" />
-          <folding>
-            <element signature="e#3608#3663#0" expanded="true" />
-            <element signature="e#10166#11686#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/libs/util/check/util.check.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="95" column="12" selection-start-line="95" selection-start-column="2" selection-end-line="95" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bicai/yi/src/mixins/opening/opening3-mixins.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="113" column="22" selection-start-line="113" selection-start-column="11" selection-end-line="113" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="54">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
